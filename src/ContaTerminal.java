@@ -20,8 +20,10 @@ public class ContaTerminal {
 
         String mensagem = "Olá ".concat(nomeCliente)
                 + ", obrigado por criar uma conta em nosso banco, sua agência é ".concat(agencia)
-                + ", conta ".concat(String.valueOf(numeroConta)) + " e seu saldo ".concat(String.valueOf(saldo))
+                + ", conta ".concat(String.valueOf(numeroConta)) + " e seu saldo R$ ".concat(String.valueOf(saldo))
                 + " já está disponível para saque.";
+
+        scanner.close();
 
         System.out.println();
         System.out.println(mensagem);
